@@ -11,11 +11,12 @@ public class Livro {
 	private String titulo;
 	private String autor;
 	private BigDecimal valor;
+	private Categoria categoria;
 	
 	@Override
 	public String toString() {
 		return "Livro [codigo=" + codigo + ", titulo=" + titulo + ", autor="
-				+ autor + ", valor=" + valor + "]";
+				+ autor + ", valor=" + valor + ", categoria=" + categoria + "]";
 	}
 
 	public String getCodigo() {
@@ -48,6 +49,14 @@ public class Livro {
 
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 }

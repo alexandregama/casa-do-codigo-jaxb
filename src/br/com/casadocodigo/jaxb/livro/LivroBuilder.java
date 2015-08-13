@@ -26,6 +26,13 @@ public class LivroBuilder {
 		return this;
 	}
 	
+	public LivroBuilder daCategoria(String nomeCategoria) {
+		Categoria categoria = new Categoria();
+		categoria.setNome(nomeCategoria);
+		livro.setCategoria(categoria);
+		return this;
+	}
+	
 	public Livro build() {
 		return this.livro;
 	}

@@ -1,4 +1,4 @@
-package br.com.casadocodigo.jaxb;
+package br.com.casadocodigo.jaxb.livro;
 
 import java.math.BigDecimal;
 

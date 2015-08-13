@@ -7,8 +7,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import br.com.casadocodigo.jaxb.Livro;
-import br.com.casadocodigo.jaxb.LivroBuilder;
+import br.com.casadocodigo.jaxb.livro.Livro;
+import br.com.casadocodigo.jaxb.livro.LivroBuilder;
 
 public class TestaMarshaller {
 

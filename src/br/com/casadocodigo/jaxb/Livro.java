@@ -11,6 +11,12 @@ public class Livro {
 	private String titulo;
 	private String autor;
 	private BigDecimal valor;
+	
+	@Override
+	public String toString() {
+		return "Livro [codigo=" + codigo + ", titulo=" + titulo + ", autor="
+				+ autor + ", valor=" + valor + "]";
+	}
 
 	public String getCodigo() {
 		return codigo;

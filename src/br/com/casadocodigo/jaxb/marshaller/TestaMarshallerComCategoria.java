@@ -10,12 +10,13 @@ import javax.xml.bind.Marshaller;
 import br.com.casadocodigo.jaxb.livro.Livro;
 import br.com.casadocodigo.jaxb.livro.LivroBuilder;
 
-public class TestaMarshaller {
+public class TestaMarshallerComCategoria {
 
 	public static void main(String[] args) throws JAXBException, FileNotFoundException {
 		Livro livro = new LivroBuilder()
 				.comCodigo("ARQ")
 				.comTitulo("Arquitetura")
+				.daCategoria("Java")
 				.doAutor("Silveira")
 				.custando(40d)
 				.build();
@@ -23,7 +24,7 @@ public class TestaMarshaller {
 		JAXBContext context = JAXBContext.newInstance(Livro.class);
 		Marshaller marshaller = context.createMarshaller();
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		marshaller.marshal(livro, new FileOutputStream("livro.xml"));
+		marshaller.marshal(livro, new FileOutputStream("livro-categoria.xml"));
 	}
 
 }

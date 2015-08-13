@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<livro>
+    <autor>Silveira</autor>
+    <categoria>
+        <nome>Java</nome>
+    </categoria>
+    <codigo>ARQ</codigo>
+    <titulo>Arquitetura</titulo>
+    <valor>40</valor>
+</livro>

@@ -4,6 +4,11 @@ public class Categoria {
 
 	private String nome;
 
+	@Override
+	public String toString() {
+		return "Categoria [nome=" + nome + "]";
+	}
+
 	public String getNome() {
 		return nome;
 	}

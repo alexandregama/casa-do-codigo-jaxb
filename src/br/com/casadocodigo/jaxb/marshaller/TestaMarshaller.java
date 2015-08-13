@@ -1,4 +1,4 @@
-package br.com.casadocodigo.jaxb;
+package br.com.casadocodigo.jaxb.marshaller;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -6,6 +6,9 @@ import java.io.FileOutputStream;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+
+import br.com.casadocodigo.jaxb.Livro;
+import br.com.casadocodigo.jaxb.LivroBuilder;
 
 public class TestaMarshaller {
 

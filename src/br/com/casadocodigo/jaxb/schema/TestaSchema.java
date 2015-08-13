@@ -20,7 +20,7 @@ public class TestaSchema {
 			
 			@Override
 			public Result createOutput(String namespaceUri, String suggestedFileName) throws IOException {
-				StreamResult stream = new StreamResult(new File("livro.xsd"));
+				StreamResult stream = new StreamResult(new File("livro-namespace.xsd"));
 				return stream;
 			}
 		});
